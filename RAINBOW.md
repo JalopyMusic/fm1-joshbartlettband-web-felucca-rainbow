@@ -177,7 +177,8 @@ settles, with a little wobble), and a sky with all the monster friends: the stre
 Two brick houses, a stoop, a lamp post and a trash can, with Blue Monster, Yellow Bird and Red Monster in the windows,
 Goobert in the doorway, Goo on the steps and Slimy peeking out of the can. The friend she is playing is out on the
 sidewalk, so its own spot is empty; at night the windows and the lamp light up. It is Red Monster's, Blue Monster's and
-Yellow Bird's home sky, and with LOOK-ALIKES off the stand-ins move in instead.
+Yellow Bird's home sky, and with LOOK-ALIKES off the stand-ins move in instead. And Cool Ducky went green, in a rainbow bucket hat and
+shades.
 
 Each one uses one of Felucca's own factory sounds (listed in `firmware/src/kid.c`, `KID_SOUND`), with its
 level set so they all play at about the same loudness. Each also has a home sky and a favorite beat

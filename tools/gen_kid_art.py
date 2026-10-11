@@ -134,12 +134,16 @@ def bow(p):
     p.ell(18, 10, 2, 2, "red")
 
 
-def shades(p):
+def bucket_shades(p):                  # shades, and a rainbow bucket hat (she asked)
     p.rect(11, 14, 25, 15, "black")
     p.ell(15, 17, 4, 3, "black"); p.ell(23, 17, 3, 3, "black")
     p.px(13, 16, "lblue"); p.px(21, 16, "lblue")
-    p.ell(19, 9, 8, 4, "teal"); p.rect(11, 9, 28, 11, "teal")    # a cap, its peak forward
-    p.rect(5, 10, 12, 11, "teal")
+    for y, (x0, x1), c in ((2, (14, 24), "red"), (3, (13, 25), "red"), (4, (12, 26), "orange"), (5, (12, 26), "orange"),
+                           (6, (11, 27), "yellow"), (7, (11, 27), "green"), (8, (11, 27), "blue"), (9, (11, 27), "blue"),
+                           (10, (11, 27), "purple")):
+        p.rect(x0, y, x1, y, c)
+    for y, (x0, x1) in ((11, (8, 30)), (12, (7, 31)), (13, (6, 32))):   # the brim, sloping down all round
+        p.rect(x0, y, x1, y, "purple")
 
 
 def axolotl():
@@ -1352,7 +1356,7 @@ ICONS = [icon_one, icon_choir, icon_strum, icon_accordion, icon_guess, icon_foll
 FRIENDS = [
     ("DUCKY", ducky("yellow", "dyellow")),
     ("PINK DUCKY", ducky("pink", "dpink", bow)),
-    ("COOL DUCKY", ducky("lblue", "mblue", shades)),
+    ("COOL DUCKY", ducky("green", "lime", bucket_shades)),
     ("AXOLOTL", axolotl),
     ("UNICORN", unicorn),
     ("GIRAFFE", giraffe),
